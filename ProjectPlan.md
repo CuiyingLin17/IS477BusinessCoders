@@ -4,6 +4,12 @@
 <p> Our first steps include dividing the work, and have each of us focus on finding a representative data set for unemployment rate, CPI, and retail sales from a reliable source. We will communicate with each other on our findings then will use the common attribute, in this case the dates of the rates, to find patterns. By comparing the unemployment rates and CPI changes to the retail trends, we will gain a solid understanding of how the market moves with these rates. </p>
 <p> With this understanding, in our future careers as Accountants or Financial advisors, we can make accurate predictions on the market and adjust our work as needed. Outside of using this information for future jobs, we could also apply this knowledge when investing our own portfolio. Overall, we hope this project gives us a chance to practice our coding skills and learn more about the economy to assist our future careers and lives. </p>
 
+# Datasets
+
+<p> The data sets our group chooses includes unemployment rate, consumer price index, annual income, and retail sales data for trade and food services. All the data sets can be linked together by the date to make comparing the different variables possible at the same date. We found all of the data sets from the Federal Reserve Bank of St. Louis which updates their data monthly. </p>
+
+<p> The unemployment rate data set only includes the data and the respective rate, making the data easy to analyze and compare with the other data sets. This data was retrieved from the U.S. Bureau of Labor Statistics and includes people over the age of 16 that are unemployed who are not in the military or living in institutions. By comparing the numbers from this data set and the retail sales trend data set, we can observe any possible relationships between the two. </p>
+
 # Timeline
 | Tasks | Description | Requirement Addressing | Complete by | Responsible Party |
 | ----- | ----- | ----- | ----- | ----- |
