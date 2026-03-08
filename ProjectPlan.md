@@ -4,5 +4,17 @@
 <p> Our first steps include dividing the work, and have each of us focus on finding a representative data set for unemployment rate, CPI, and retail sales from a reliable source. We will communicate with each other on our findings then will use the common attribute, in this case the dates of the rates, to find patterns. By comparing the unemployment rates and CPI changes to the retail trends, we will gain a solid understanding of how the market moves with these rates. </p>
 <p> With this understanding, in our future careers as Accountants or Financial advisors, we can make accurate predictions on the market and adjust our work as needed. Outside of using this information for future jobs, we could also apply this knowledge when investing our own portfolio. Overall, we hope this project gives us a chance to practice our coding skills and learn more about the economy to assist our future careers and lives. </p>
 
-
-<br> test test
+# Timeline
+| Tasks | Description | Requirement Addressing | Complete by | Responsible Party |
+| Relate project workflow with lifecycle models | Lifecycle models were discussed in class. The responsible party will review these models and relate the project to one or more models. | Data lifecycle | March 29 | ? |
+| Identify and describe file and data types | The responsible party will describe 1) the file types and 2) the datasets used (i.e. structure and schema). | Files storage and organization | March 25 | ? |
+| Identify and describe specific storage and organization strategy | The responsible party will determine how files and data will be stored and organized to better suit project needs. The responsible party will also determine file naming conventions and document the strategy. | Files storage and organization | March 11 | ? |
+| Identify and handle constraints | There may be ethical, legal, and/or policy constraints to data usage. The responsible party will identify all relevant constraints and describe how these constraints were addressed. Examples of constraints include consent, privacy/confidentiality, copyright, licenses, and terms of use. | Ethical data handling | March 11 | ? |
+| Collect data | The responsible party will find and retrieve datasets on unemployment, inflation, income, and retail sales from trustworthy sources (e.g. FRED). | Data collection and acquisition | March 8 | Team |
+| Prepare data | The responsible party will extract relevant information/columns from the raw datasets and add any columns calculated from existing columns (e.g. inflation rate). | Extraction and enrichment | March 15 | ? |
+| Integrate data | The responsible party will combine all the datasets into one dataset using either Pandas from Python or SQL. | Data integration | March 15 | ? |
+| Assess and document data quality | The responsible party will assess the quality of the data and document the results. | Data quality | March 15? or earlier | ? |
+| Clean data and describe methods used | The responsible party will clean the dataset for any missing values, outliers, or syntactic or semantic differences between datasets. | Data cleaning | March 15 | Team? |
+| Create automated workflow | The responsible party will create an automated end-to-end workflow for data handling. | Workflow automation and provenance | March 22? | ? |
+| Document workflow | The responsible party will document the work performed in detail to allow for reproduction. For example, clear instructions for the workflow, description of data sources, and describe analysis steps. | Reproducibility and provenance | March 25 | Team? |
+| Document relevant information of data used | The responsible party will document descriptions of the datasets (e.g. data source, variable definitions, data types, etc.) | Metadata and data documentation | March 15 | ? |
