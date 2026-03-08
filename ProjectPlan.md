@@ -6,6 +6,7 @@
 
 # Timeline
 | Tasks | Description | Requirement Addressing | Complete by | Responsible Party |
+| ----- | ----- | ----- | ----- | ----- |
 | Relate project workflow with lifecycle models | Lifecycle models were discussed in class. The responsible party will review these models and relate the project to one or more models. | Data lifecycle | March 29 | ? |
 | Identify and describe file and data types | The responsible party will describe 1) the file types and 2) the datasets used (i.e. structure and schema). | Files storage and organization | March 25 | ? |
 | Identify and describe specific storage and organization strategy | The responsible party will determine how files and data will be stored and organized to better suit project needs. The responsible party will also determine file naming conventions and document the strategy. | Files storage and organization | March 11 | ? |
