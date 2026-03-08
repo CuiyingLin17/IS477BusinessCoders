@@ -12,15 +12,26 @@
 # Timeline
 | Tasks | Description | Requirement Addressing | Complete by | Responsible Party |
 | ----- | ----- | ----- | ----- | ----- |
-| Relate project workflow with lifecycle models | Lifecycle models were discussed in class. The responsible party will review these models and relate the project to one or more models. | Data lifecycle | March 29 | ? |
-| Identify and describe file and data types | The responsible party will describe 1) the file types and 2) the datasets used (i.e. structure and schema). | Files storage and organization | March 25 | ? |
-| Identify and describe specific storage and organization strategy | The responsible party will determine how files and data will be stored and organized to better suit project needs. The responsible party will also determine file naming conventions and document the strategy. | Files storage and organization | March 11 | ? |
+| Relate project workflow with lifecycle models | Lifecycle models were discussed in class. The responsible party will review these models and relate the project to one or more models. | Data lifecycle | Ongoing until submission | ? |
+| Identify and describe file and data types | The responsible party will describe 1) the file types and 2) the datasets used (i.e. structure and schema). | Files storage and organization | March 25 | Cuiying |
+| Identify and describe specific storage and organization strategy | The responsible party will determine how files and data will be stored and organized to better suit project needs. The responsible party will also determine file naming conventions and document the strategy. | Files storage and organization | March 11 | Cindy |
 | Identify and handle constraints | There may be ethical, legal, and/or policy constraints to data usage. The responsible party will identify all relevant constraints and describe how these constraints were addressed. Examples of constraints include consent, privacy/confidentiality, copyright, licenses, and terms of use. | Ethical data handling | March 11 | ? |
 | Collect data | The responsible party will find and retrieve datasets on unemployment, inflation, income, and retail sales from trustworthy sources (e.g. FRED). | Data collection and acquisition | March 8 | Team |
-| Prepare data | The responsible party will extract relevant information/columns from the raw datasets and add any columns calculated from existing columns (e.g. inflation rate). | Extraction and enrichment | March 15 | ? |
-| Integrate data | The responsible party will combine all the datasets into one dataset using either Pandas from Python or SQL. | Data integration | March 15 | ? |
-| Assess and document data quality | The responsible party will assess the quality of the data and document the results. | Data quality | March 15? or earlier | ? |
-| Clean data and describe methods used | The responsible party will clean the dataset for any missing values, outliers, or syntactic or semantic differences between datasets. | Data cleaning | March 15 | Team? |
-| Create automated workflow | The responsible party will create an automated end-to-end workflow for data handling. | Workflow automation and provenance | March 22? | ? |
-| Document workflow | The responsible party will document the work performed in detail to allow for reproduction. For example, clear instructions for the workflow, description of data sources, and describe analysis steps. | Reproducibility and provenance | March 25 | Team? |
-| Document relevant information of data used | The responsible party will document descriptions of the datasets (e.g. data source, variable definitions, data types, etc.) | Metadata and data documentation | March 15 | ? |
+| Prepare data | The responsible party will extract relevant information/columns from the raw datasets and add any columns calculated from existing columns (e.g. inflation rate). | Extraction and enrichment | March 15 | Cindy |
+| Integrate data | The responsible party will combine all the datasets into one dataset using either Pandas from Python or SQL. | Data integration | March 15 | Cuiying |
+| Assess and document data quality | The responsible party will assess the quality of the data and document the results. | Data quality | March 20 | ? |
+| Clean data and describe methods used | The responsible party will clean the dataset for any missing values, outliers, or syntactic or semantic differences between datasets. | Data cleaning | March 21 | Team? |
+| Create automated workflow | The responsible party will create an automated end-to-end workflow for data handling. | Workflow automation and provenance | March 22? | Cindy |
+| Analyze datasets | The responsible party will analyze the integrated dataset to answer the research question. | N/A | March 23 | Team? |
+| Document workflow | The responsible party will document the work performed in detail to allow for reproduction. For example, clear instructions for the workflow, description of data sources, and describe analysis steps. | Reproducibility and provenance | Ongoing until submission | Team? |
+| Document relevant information of data used | The responsible party will document descriptions of the datasets (e.g. data source, variable definitions, data types, etc.) | Metadata and data documentation | March 22 | Cuiying |
+
+# Constraints
+The known limitations and challenges with our datasets and approach are as follows:
+- All of our datasets contain information at the national level, which limits analysis at the regional or state level. 
+- All of the datasets are revised and updated monthly, which could be an issue of reproducibility at a later date. 
+- The consumer price index dataset and unemployment dataset is missing data for October 2025 as a result of the government shutdown. 
+- Our approach analyzes the effects of macroeconomic factors, specifically unemployment, inflation, and income, on retail sales. However, there are other macroeconomic factors, such as interest rates and gross domestic product, and non-macroeconomic factors, such as change in consumer behavior and disruption in supply chain, that affect retail sales altogether. The three factors of our analysis may not encompass the full image.
+
+# Gaps
+Currently, our team needs additional input on automation and data quality assessment. While we have a basic understanding of automation, we do not know how such a process is implemented. We also have various interpretations of data quality, therefore a formal definition would be helpful. 
