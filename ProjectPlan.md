@@ -3,6 +3,19 @@
 <p> Our first steps include dividing the work, and have each of us focus on finding a representative data set for unemployment rate, CPI, and retail sales from a reliable source. We will communicate with each other on our findings then will use the common attribute, in this case the dates of the rates, to find patterns. By comparing the unemployment rates and CPI changes to the retail trends, we will gain a solid understanding of how the market moves with these rates. </p>
 <p> With this understanding, in our future careers as Accountants or Financial advisors, we can make accurate predictions on the market and adjust our work as needed. Outside of using this information for future jobs, we could also apply this knowledge when investing our own portfolio. Overall, we hope this project gives us a chance to practice our coding skills and learn more about the economy to assist our future careers and lives. </p>
 
+# Team
+<p>Our team consists of three members with backgrounds in Business and DataScience.
+  
+Cuiying: Accountancy&DataScience
+roles&responsibilities: Identifying and describing the  file types and the datasets used (i.e. structure and schema). Combining all the datasets into one dataset using either Pandas from Python or SQL. Documenting descriptions of the datasets (e.g. data source, variable definitions, data types, etc.) Assist in team collaborative portions of the project and help team members in their parts if needed. 
+
+Cindy: Finance&DataScience
+roles&responsibilities: Organizing and describing files in the github repository. Collect and organize the information from the data sets. Create an automated workflow for data handling. Assist in team collaborative portions of the project and help team members in their parts if needed. 
+
+Yelin: Accountancy&DataScience
+roles&responsibilities: Relating our project workflow with data lifecycle models discussed in class.Identifying and documenting ethical, legal, and policy constraints related to the datasets we use. Assessing and documenting data quality, including consistency, completeness, and readiness for integration. Assist in team collaborative portions of the project and help team members in their parts if needed. </p>
+
+
 # Datasets
 
 <p> The data sets our group chooses includes unemployment rate, consumer price index, annual income, and retail sales data for trade and food services. All the data sets can be linked together by the date to make comparing the different variables possible at the same date. We found all of the data sets from the Federal Reserve Bank of St. Louis which updates their data monthly. </p>
