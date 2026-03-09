@@ -7,12 +7,15 @@
 <p>Our team consists of three members with backgrounds in Business and DataScience.
   
 Cuiying: Accountancy&DataScience
+
 roles&responsibilities: Identifying and describing the  file types and the datasets used (i.e. structure and schema). Combining all the datasets into one dataset using either Pandas from Python or SQL. Documenting descriptions of the datasets (e.g. data source, variable definitions, data types, etc.) Assist in team collaborative portions of the project and help team members in their parts if needed. 
 
 Cindy: Finance&DataScience
+
 roles&responsibilities: Organizing and describing files in the github repository. Collect and organize the information from the data sets. Create an automated workflow for data handling. Assist in team collaborative portions of the project and help team members in their parts if needed. 
 
 Yelin: Accountancy&DataScience
+
 roles&responsibilities: Relating our project workflow with data lifecycle models discussed in class.Identifying and documenting ethical, legal, and policy constraints related to the datasets we use. Assessing and documenting data quality, including consistency, completeness, and readiness for integration. Assist in team collaborative portions of the project and help team members in their parts if needed. </p>
 
 
@@ -21,6 +24,37 @@ roles&responsibilities: Relating our project workflow with data lifecycle models
 <p> The data sets our group chooses includes unemployment rate, consumer price index, annual income, and retail sales data for trade and food services. All the data sets can be linked together by the date to make comparing the different variables possible at the same date. We found all of the data sets from the Federal Reserve Bank of St. Louis which updates their data monthly. </p>
 
 <p> The unemployment rate data set only includes the data and the respective rate, making the data easy to analyze and compare with the other data sets. This data was retrieved from the U.S. Bureau of Labor Statistics and includes people over the age of 16 that are unemployed who are not in the military or living in institutions. By comparing the numbers from this data set and the retail sales trend data set, we can observe any possible relationships between the two. </p>
+
+<p>
+Unemployment Dataset
+  
+This unemployment dataset measures the unemployment condition in the labor market. In this project, the unemployment rate could help us examine whether different labor market conditions lead to the different conditions in U.S. retail sales.
+  
+https://fred.stlouisfed.org/series/UNRATE#
+source: U.S. Bureau of Labor Statistics; public data
+
+consumer price index: to download data
+
+This consumer price index dataset measures the change in the price level paid by consumers for getting good/services. It could reflect the purchasing power of consumers. In our project, this dataset could help us to know whether it is a key variable associated with the changes in retail sales from 2016-2026. (We use the CPIAUCSL series available through FRED, which is originally sourced from the U.S. Bureau of Labor Statistics (BLS).)
+
+https://data.bls.gov/series-report; series id: CUSR0000SA0; bruh this works now
+https://fred.stlouisfed.org/series/CPIAUCSL 
+U.S. Bureau of Labor Statistics; public data
+
+retail sales
+
+This dataset measures the total monthly sales of retail trade and food services in the U.S. since 1992. In our project, it is the key factor which we want to research. The dataset  we picked is from FRED with the series id RSAFS.
+            
+https://fred.stlouisfed.org/series/RSAFS；series id: RSAFS
+U.S. Census Bureau; public data
+
+income
+
+This dataset measures income available to individuals after taxes and reflects consumers’ ability to spend. In this project, it helps us analyze whether changes in income are related to changes in U.S. retail sales.We use the DSPI series from FRED.
+
+https://fred.stlouisfed.org/series/DSPI 
+U.S. Bureau of Economic Analysis; public data
+</p>
 
 # Timeline
 | Tasks | Description | Requirement Addressing | Complete by | Responsible Party |
