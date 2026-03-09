@@ -26,6 +26,7 @@ roles&responsibilities: Relating our project workflow with data lifecycle models
 <p> The unemployment rate data set only includes the data and the respective rate, making the data easy to analyze and compare with the other data sets. This data was retrieved from the U.S. Bureau of Labor Statistics and includes people over the age of 16 that are unemployed who are not in the military or living in institutions. By comparing the numbers from this data set and the retail sales trend data set, we can observe any possible relationships between the two. </p>
 
 <p>
+  
 **Unemployment Dataset**
   
 This unemployment dataset measures the unemployment condition in the labor market. In this project, the unemployment rate could help us examine whether different labor market conditions lead to the different conditions in U.S. retail sales.
