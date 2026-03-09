@@ -42,7 +42,7 @@ https://data.bls.gov/series-report; series id: CUSR0000SA0; bruh this works now
 https://fred.stlouisfed.org/series/CPIAUCSL 
 U.S. Bureau of Labor Statistics; public data
 
-**retail sales**
+**Retail sales**
 
 This dataset measures the total monthly sales of retail trade and food services in the U.S. since 1992. In our project, it is the key factor which we want to research. The dataset  we picked is from FRED with the series id RSAFS.
             
