@@ -67,7 +67,7 @@ U.S. Bureau of Economic Analysis; Public Data
 | Integrate data | The responsible party will combine all the datasets into one dataset using either Pandas from Python or SQL. | Data integration | March 15 | Cuiying |
 | Assess and document data quality | The responsible party will assess the quality of the data and document the results. | Data quality | March 20 | Yelin |
 | Clean data and describe methods used | The responsible party will clean the dataset for any missing values, outliers, or syntactic or semantic differences between datasets. | Data cleaning | March 21 | Team |
-| Create automated workflow | The responsible party will create an automated end-to-end workflow for data handling. | Workflow automation and provenance | March 22? | Cindy |
+| Create automated workflow | The responsible party will create an automated end-to-end workflow for data handling. | Workflow automation and provenance | March 22 | Cindy |
 | Analyze datasets | The responsible party will analyze the integrated dataset to answer the research question. | N/A | March 23 | Team |
 | Document workflow | The responsible party will document the work performed in detail to allow for reproduction. For example, clear instructions for the workflow, description of data sources, and describe analysis steps. | Reproducibility and provenance | Ongoing until submission | Team |
 | Document relevant information of data used | The responsible party will document descriptions of the datasets (e.g. data source, variable definitions, data types, etc.) | Metadata and data documentation | March 22 | Cuiying |
