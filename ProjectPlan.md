@@ -18,6 +18,9 @@ Yelin: Accountancy&DataScience
 
 roles&responsibilities: Relating our project workflow with data lifecycle models discussed in class.Identifying and documenting ethical, legal, and policy constraints related to the datasets we use. Assessing and documenting data quality, including consistency, completeness, and readiness for integration. Assist in team collaborative portions of the project and help team members in their parts if needed. </p>
 
+# Research or Business Question(s)
+<p> How have macroeconomic factors such as unemployment rate, inflation, and personal income influenced retail sales trends in the United States over the past 10 years? </p>
+
 
 # Datasets
 
@@ -78,6 +81,8 @@ The known limitations and challenges with our datasets and approach are as follo
 - All of the datasets are revised and updated monthly, which could be an issue of reproducibility at a later date. 
 - The consumer price index dataset and unemployment dataset is missing data for October 2025 as a result of the government shutdown. 
 - Our approach analyzes the effects of macroeconomic factors, specifically unemployment, inflation, and income, on retail sales. However, there are other macroeconomic factors, such as interest rates and gross domestic product, and non-macroeconomic factors, such as change in consumer behavior and disruption in supply chain, that affect retail sales altogether. The three factors of our analysis may not encompass the full image.
+
+- In addition, although unemployment, inflation, and income are relevant explanatory variables, they may not fully capture all influences on retail sales trends. Our findings should therefore be interpreted as showing possible relationships rather than complete confirmation of reasons of changes in retail sales.
 
 # Gaps
 Currently, our team needs additional input on automation and data quality assessment. While we have a basic understanding of automation, we do not know how such a process is implemented. We also have various interpretations of data quality, therefore a formal definition would be helpful. Additionally, we believe that consistent feedback from the TAs would be helpful in guiding our project. 
