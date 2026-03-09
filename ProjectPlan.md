@@ -26,14 +26,14 @@ roles&responsibilities: Relating our project workflow with data lifecycle models
 <p> The unemployment rate data set only includes the data and the respective rate, making the data easy to analyze and compare with the other data sets. This data was retrieved from the U.S. Bureau of Labor Statistics and includes people over the age of 16 that are unemployed who are not in the military or living in institutions. By comparing the numbers from this data set and the retail sales trend data set, we can observe any possible relationships between the two. </p>
 
 <p>
-Unemployment Dataset
+##Unemployment Dataset
   
 This unemployment dataset measures the unemployment condition in the labor market. In this project, the unemployment rate could help us examine whether different labor market conditions lead to the different conditions in U.S. retail sales.
   
 https://fred.stlouisfed.org/series/UNRATE#
 source: U.S. Bureau of Labor Statistics; public data
 
-consumer price index: to download data
+##consumer price index: to download data
 
 This consumer price index dataset measures the change in the price level paid by consumers for getting good/services. It could reflect the purchasing power of consumers. In our project, this dataset could help us to know whether it is a key variable associated with the changes in retail sales from 2016-2026. (We use the CPIAUCSL series available through FRED, which is originally sourced from the U.S. Bureau of Labor Statistics (BLS).)
 
@@ -41,14 +41,14 @@ https://data.bls.gov/series-report; series id: CUSR0000SA0; bruh this works now
 https://fred.stlouisfed.org/series/CPIAUCSL 
 U.S. Bureau of Labor Statistics; public data
 
-retail sales
+##retail sales
 
 This dataset measures the total monthly sales of retail trade and food services in the U.S. since 1992. In our project, it is the key factor which we want to research. The dataset  we picked is from FRED with the series id RSAFS.
             
 https://fred.stlouisfed.org/series/RSAFS；series id: RSAFS
 U.S. Census Bureau; public data
 
-income
+##income
 
 This dataset measures income available to individuals after taxes and reflects consumers’ ability to spend. In this project, it helps us analyze whether changes in income are related to changes in U.S. retail sales.We use the DSPI series from FRED.
 
@@ -59,18 +59,18 @@ U.S. Bureau of Economic Analysis; public data
 # Timeline
 | Tasks | Description | Requirement Addressing | Complete by | Responsible Party |
 | ----- | ----- | ----- | ----- | ----- |
-| Relate project workflow with lifecycle models | Lifecycle models were discussed in class. The responsible party will review these models and relate the project to one or more models. | Data lifecycle | Ongoing until submission | ? |
+| Relate project workflow with lifecycle models | Lifecycle models were discussed in class. The responsible party will review these models and relate the project to one or more models. | Data lifecycle | Ongoing until submission | Yelin |
 | Identify and describe file and data types | The responsible party will describe 1) the file types and 2) the datasets used (i.e. structure and schema). | Files storage and organization | March 25 | Cuiying |
 | Identify and describe specific storage and organization strategy | The responsible party will determine how files and data will be stored and organized to better suit project needs. The responsible party will also determine file naming conventions and document the strategy. | Files storage and organization | March 11 | Cindy |
-| Identify and handle constraints | There may be ethical, legal, and/or policy constraints to data usage. The responsible party will identify all relevant constraints and describe how these constraints were addressed. Examples of constraints include consent, privacy/confidentiality, copyright, licenses, and terms of use. | Ethical data handling | March 11 | ? |
+| Identify and handle constraints | There may be ethical, legal, and/or policy constraints to data usage. The responsible party will identify all relevant constraints and describe how these constraints were addressed. Examples of constraints include consent, privacy/confidentiality, copyright, licenses, and terms of use. | Ethical data handling | March 11 | Yelin |
 | Collect data | The responsible party will find and retrieve datasets on unemployment, inflation, income, and retail sales from trustworthy sources (e.g. FRED). | Data collection and acquisition | March 8 | Team |
 | Prepare data | The responsible party will extract relevant information/columns from the raw datasets and add any columns calculated from existing columns (e.g. inflation rate). | Extraction and enrichment | March 15 | Cindy |
 | Integrate data | The responsible party will combine all the datasets into one dataset using either Pandas from Python or SQL. | Data integration | March 15 | Cuiying |
-| Assess and document data quality | The responsible party will assess the quality of the data and document the results. | Data quality | March 20 | ? |
-| Clean data and describe methods used | The responsible party will clean the dataset for any missing values, outliers, or syntactic or semantic differences between datasets. | Data cleaning | March 21 | Team? |
+| Assess and document data quality | The responsible party will assess the quality of the data and document the results. | Data quality | March 20 | Yelin |
+| Clean data and describe methods used | The responsible party will clean the dataset for any missing values, outliers, or syntactic or semantic differences between datasets. | Data cleaning | March 21 | Team |
 | Create automated workflow | The responsible party will create an automated end-to-end workflow for data handling. | Workflow automation and provenance | March 22? | Cindy |
-| Analyze datasets | The responsible party will analyze the integrated dataset to answer the research question. | N/A | March 23 | Team? |
-| Document workflow | The responsible party will document the work performed in detail to allow for reproduction. For example, clear instructions for the workflow, description of data sources, and describe analysis steps. | Reproducibility and provenance | Ongoing until submission | Team? |
+| Analyze datasets | The responsible party will analyze the integrated dataset to answer the research question. | N/A | March 23 | Team |
+| Document workflow | The responsible party will document the work performed in detail to allow for reproduction. For example, clear instructions for the workflow, description of data sources, and describe analysis steps. | Reproducibility and provenance | Ongoing until submission | Team |
 | Document relevant information of data used | The responsible party will document descriptions of the datasets (e.g. data source, variable definitions, data types, etc.) | Metadata and data documentation | March 22 | Cuiying |
 
 # Constraints
