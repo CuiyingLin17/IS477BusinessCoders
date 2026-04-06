@@ -27,5 +27,5 @@ For our future work the contents in the results folder should include all and on
 # Changes to Project Plan
 <p> We pushed the Complete By dates for all the other tasks to later dates because we realized that we will not meet the original deadlines with our current progress. We changed the date for identifying and describing constraints to "Ongoing until submission" because we believe that the constraints apply to data extraction, usage, and distribution which would make more sense for this task to be completed as an ongoing process. We also changed the date for data lifecycle relation to May 3 because we believe that such relation can be better made when the whole process is completed. </p>
 
-#Team Member Contribution
+# Team Member Contribution
 <p>Cindy started setting up the folders needed to organize notebooks and future files that will be made. She also uploaded the data acquisition Google Co-lab files to acquire all 4 files and also found the hash of all the files. </p>
