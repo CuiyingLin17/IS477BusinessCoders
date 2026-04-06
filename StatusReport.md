@@ -27,5 +27,38 @@ For our future work the contents in the results folder should include all and on
 # Changes to Project Plan
 <p> We pushed the Complete By dates for all the other tasks to later dates because we realized that we will not meet the original deadlines with our current progress. We changed the date for identifying and describing constraints to "Ongoing until submission" because we believe that the constraints apply to data extraction, usage, and distribution which would make more sense for this task to be completed as an ongoing process. We also changed the date for data lifecycle relation to May 3 because we believe that such relation can be better made when the whole process is completed. </p>
 
+#Challenges & Problems
+<p>We identified a challenge which is practical. The datasets we used are from different sources, so they need careful documentation of links/ agency origin. We addressed this by recording the source information for each dataset in the project materials. Besides, because these datasets are maintained and updated over time, the values may change if downloaded at different dates. This creates a reproducibility concern for later project stages, so we planned to keep a stable copy of the downloaded files in the repository and document retrieval details.
+
+What’s more, we also found an analytical limitation in the current dataset selection. All four variables are measured at the U.S. national level, which means our analysis will focus on broad macroeconomic relationships rather than regional or state-level differences. In addition, although the datasets can be aligned by date, they represent different economic concepts and may require preprocessing before direct comparison. This means the data cannot simply be combined without checking consistency in time coverage and interpretation.</p>
+
+
 # Team Member Contribution
 <p>Cindy started setting up the folders needed to organize notebooks and future files that will be made. She also uploaded the data acquisition Google Co-lab files to acquire all 4 files and also found the hash of all the files. </p>
+
+<p>Yelin worked on the Identify and Handle Constraints, Assess and Document Data Quality, and Challenges & Problems sections. She did the data quality check and reviewed the selected datasets and summarized the main data quality and project constraints identified during this milestone.
+</p>
+
+#Identify and handle constraints
+<p>We discovered a number of limitations pertaining to data consumption and analysis after examining the four datasets (UNRATE, CPIAUCSL/CUSR0000SA0, RSAFS, and DSPI) that we had chosen for this study. All datasets are free of sensitive or private data because they are sourced from public sources including FRED, BLS, the U.S. Census Bureau, and the U.S. Bureau of Economic Analysis. As a result, we found no issues with confidentiality or privacy.</p>
+
+#Assess and document data quality
+<p>During this milestone, we conducted an initial data quality assessment of the four selected datasets: UNRATE, CPIAUCSL, RSAFS, and DSPI. We reviewed each dataset for structure, missing values, duplicate rows, and time coverage.
+
+The datasets are generally well-structured and suitable for later analysis. Each file contains one date column (`observation_date`) and one numeric variable column. UNRATE has 939 rows, CPIAUCSL has 950 rows, RSAFS has 410 rows, and DSPI has 805 rows. This consistent structure will make later preprocessing and integration more manageable.
+
+The assessment also showed that data completeness is generally strong. RSAFS and DSPI contain no missing values, while UNRATE and CPIAUCSL each contain one missing value in the indicator column. No duplicate rows were found in any of the four datasets. In addition, all four datasets cover a sufficiently broad time range for the project, although their starting dates differ. UNRATE spans from 1948-01-01 to 2026-03-01, CPIAUCSL spans from 1947-01-01 to 2026-02-01, RSAFS spans from 1992-01-01 to 2026-02-01, and DSPI spans from 1959-01-01 to 2026-01-01.
+
+Based on this review, we concluded that the selected datasets are appropriate for the project, but further preprocessing will still be required. In particular, the datasets will need to be aligned by time period, and the small number of missing values in UNRATE and CPIAUCSL will need to be handled before merging and analysis.</p>
+
+
+
+
+
+
+
+
+
+
+
+
