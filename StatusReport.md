@@ -39,7 +39,7 @@ What’s more, we also found an analytical limitation in the current dataset sel
 <p>Yelin worked on the Identify and Handle Constraints, Assess and Document Data Quality, and Challenges & Problems sections. She did the data quality check and reviewed the selected datasets and summarized the main data quality and project constraints identified during this milestone.
 </p>
 
-#Identify and handle constraints
+# Identify and handle constraints
 <p>We discovered a number of limitations pertaining to data consumption and analysis after examining the four datasets (UNRATE, CPIAUCSL/CUSR0000SA0, RSAFS, and DSPI) that we had chosen for this study. All datasets are free of sensitive or private data because they are sourced from public sources including FRED, BLS, the U.S. Census Bureau, and the U.S. Bureau of Economic Analysis. As a result, we found no issues with confidentiality or privacy.</p>
 
 # Assess and document data quality
