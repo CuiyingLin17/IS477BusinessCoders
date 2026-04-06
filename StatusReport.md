@@ -1,11 +1,25 @@
 # Task updates
-We have completed a couple of our tasks to find and prepare our datasets, but all other tasks have not been started; details for the tasks that we completed are as follows:
+We have started and completed a couple of our tasks to find and prepare our datasets, but all other tasks have not been started; details for the tasks that we completed are as follows:
 ### Identify and describe specific storage and organization strategy
-<p> My strategy for organizing and storing our datasets and work was to have different folders for different types of files. Notebooks will contain all the coding work, the acquired notebooks include the code to retrieve the data. Future notebooks will be named according to their purpose and added to this folder. Other folders that are needed to organize and document our process include results, to explain our process and findings, references, data, to hold cleaned and merged data, and any future work done on other software. The reason for me to organize the files in this way is because having all the notebooks in one place for my members to look at will be helpful in the future of this project. In case we face errors in our code, back tracking will be easy if our files are stored and named based on their functions. <br>
+<p> My strategy for organizing and storing our datasets and work was to have different folders for different types of files. Notebooks will contain all the coding work, the acquired notebooks include the code to retrieve the data. Future notebooks will be named according to their purpose and added to this folder. Other folders that are needed to organize and document our process include results, to explain our process and findings, references, data, to hold cleaned and merged data, and any future work done on other software. The reason for me to organize the files in this way is because having all the notebooks in one place for my members to look at will be helpful in the future of this project. In case we face errors in our code, back tracking will be easy if our files are stored and named based on their functions. 
+
 For our future work the contents in the results folder should include all and only files that help explain and showcase the final product of our project. These most likely will be text files. References will include all of the websites and softwares that were used to make this project possible. Finally, we will need to make readme and contribution files to make this project more accessible to new users. </p>
 
-### Collect & Prepare Data
-<p> We acquired the datasets that were described in our Project Plan, and we checked for integrity by using SHA-256 to be prepared to download for future usage. Because our data is easily accessible online, there was not too much extra work needed to prepare the data. The hash will help the data be consistent in the future when the data set gets updated. Hash will help future users access the same data we are using currently to achieve the same results. </p>
+### Identify and handle constraints
+
+
+### Collect and prepare data
+<p> We acquired the datasets that were described in our Project Plan, and we checked for integrity by using SHA-256 to be prepared to download for future usage. Because our data is easily accessible online, there was not too much extra work needed to prepare the data aside from calculating inflation rates from the consumer price index data. The hash will help the data be consistent in the future when the data set gets updated. Hash will help future users access the same data we are using currently to achieve the same results. </p>
+
+### Assess and document data quality
+
+### Identify and describe file and data types
+<p>For all four of our datasets, we are working with CSV files, which contains tabular data such as unemployment rate, consumer price index, retail sales, and disposable personal income for each month of the ten year period. The data types are float for all four of the macroeconomic variables and datetime. </p>
+
+### Document workflow
+<p>We have started to document the work that we performed thus far; the current draft is as follows: <br>
+  We retrieved and extracted data on unemployment rate, consumer price index, retail sales, and income of the last ten years from the FRED using SHA-256. After assessing the data quality, we added a column for monthly inflation rate calculated from the consumer price index data. 
+</p>
 
 # Updated Timeline
 | Tasks | Description | Requirement Addressing | Complete by | Responsible Party | Status |
@@ -39,8 +53,10 @@ What’s more, we also found an analytical limitation in the current dataset sel
 <p>Yelin worked on the Identify and Handle Constraints, Assess and Document Data Quality, and Challenges & Problems sections. She did the data quality check and reviewed the selected datasets and summarized the main data quality and project constraints identified during this milestone.
 </p>
 
+<p>Cuiying described the file and data types of the dataset that will be used and drafted the documentation for the workflow thus far. She also created the Updated Timeline table and wrote the Changes to Project Plan section.</p>
+
 # Identify and handle constraints
-<p>We discovered a number of limitations pertaining to data consumption and analysis after examining the four datasets (UNRATE, CPIAUCSL/CUSR0000SA0, RSAFS, and DSPI) that we had chosen for this study. All datasets are free of sensitive or private data because they are sourced from public sources including FRED, BLS, the U.S. Census Bureau, and the U.S. Bureau of Economic Analysis. As a result, we found no issues with confidentiality or privacy.</p>
+<p>We did not discovered limitations pertaining to data consumption and analysis after examining the four datasets (UNRATE, CPIAUCSL/CUSR0000SA0, RSAFS, and DSPI) that we had chosen for this study. All datasets are free of sensitive or private data because they are sourced from public sources including FRED, BLS, the U.S. Census Bureau, and the U.S. Bureau of Economic Analysis. As a result, we found no issues with confidentiality or privacy.</p>
 
 # Assess and document data quality
 <p>During this milestone, we conducted an initial data quality assessment of the four selected datasets: UNRATE, CPIAUCSL, RSAFS, and DSPI. We reviewed each dataset for structure, missing values, duplicate rows, and time coverage.
@@ -50,15 +66,3 @@ The datasets are generally well-structured and suitable for later analysis. Each
 The assessment also showed that data completeness is generally strong. RSAFS and DSPI contain no missing values, while UNRATE and CPIAUCSL each contain one missing value in the indicator column. No duplicate rows were found in any of the four datasets. In addition, all four datasets cover a sufficiently broad time range for the project, although their starting dates differ. UNRATE spans from 1948-01-01 to 2026-03-01, CPIAUCSL spans from 1947-01-01 to 2026-02-01, RSAFS spans from 1992-01-01 to 2026-02-01, and DSPI spans from 1959-01-01 to 2026-01-01.
 
 Based on this review, we concluded that the selected datasets are appropriate for the project, but further preprocessing will still be required. In particular, the datasets will need to be aligned by time period, and the small number of missing values in UNRATE and CPIAUCSL will need to be handled before merging and analysis.</p>
-
-
-
-
-
-
-
-
-
-
-
-
