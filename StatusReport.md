@@ -6,12 +6,21 @@ We have started and completed a couple of our tasks to find and prepare our data
 For our future work the contents in the results folder should include all and only files that help explain and showcase the final product of our project. These most likely will be text files. References will include all of the websites and softwares that were used to make this project possible. Finally, we will need to make readme and contribution files to make this project more accessible to new users. </p>
 
 ### Identify and handle constraints
+<p>We did not discovered limitations pertaining to data consumption and analysis after examining the four datasets (UNRATE, CPIAUCSL/CUSR0000SA0, RSAFS, and DSPI) that we had chosen for this study. All datasets are free of sensitive or private data because they are sourced from public sources including FRED, BLS, the U.S. Census Bureau, and the U.S. Bureau of Economic Analysis. As a result, we found no issues with confidentiality or privacy.</p>
 
 
 ### Collect and prepare data
 <p> We acquired the datasets that were described in our Project Plan, and we checked for integrity by using SHA-256 to be prepared to download for future usage. Because our data is easily accessible online, there was not too much extra work needed to prepare the data aside from calculating inflation rates from the consumer price index data. The hash will help the data be consistent in the future when the data set gets updated. Hash will help future users access the same data we are using currently to achieve the same results. </p>
 
 ### Assess and document data quality
+<p>During this milestone, we conducted an initial data quality assessment of the four selected datasets: UNRATE, CPIAUCSL, RSAFS, and DSPI. We reviewed each dataset for structure, missing values, duplicate rows, and time coverage.
+
+The datasets are generally well-structured and suitable for later analysis. Each file contains one date column (`observation_date`) and one numeric variable column. UNRATE has 939 rows, CPIAUCSL has 950 rows, RSAFS has 410 rows, and DSPI has 805 rows. This consistent structure will make later preprocessing and integration more manageable.
+
+The assessment also showed that data completeness is generally strong. RSAFS and DSPI contain no missing values, while UNRATE and CPIAUCSL each contain one missing value in the indicator column. No duplicate rows were found in any of the four datasets. In addition, all four datasets cover a sufficiently broad time range for the project, although their starting dates differ. UNRATE spans from 1948-01-01 to 2026-03-01, CPIAUCSL spans from 1947-01-01 to 2026-02-01, RSAFS spans from 1992-01-01 to 2026-02-01, and DSPI spans from 1959-01-01 to 2026-01-01.
+
+Based on this review, we concluded that the selected datasets are appropriate for the project, but further preprocessing will still be required. In particular, the datasets will need to be aligned by time period, and the small number of missing values in UNRATE and CPIAUCSL will need to be handled before merging and analysis.</p>
+
 
 ### Identify and describe file and data types
 <p>For all four of our datasets, we are working with CSV files, which contains tabular data such as unemployment rate, consumer price index, retail sales, and disposable personal income for each month of the ten year period. The data types are float for all four of the macroeconomic variables and datetime. </p>
@@ -54,15 +63,3 @@ What’s more, we also found an analytical limitation in the current dataset sel
 </p>
 
 <p>Cuiying described the file and data types of the dataset that will be used and drafted the documentation for the workflow thus far. She also created the Updated Timeline table and wrote the Changes to Project Plan section.</p>
-
-# Identify and handle constraints
-<p>We did not discovered limitations pertaining to data consumption and analysis after examining the four datasets (UNRATE, CPIAUCSL/CUSR0000SA0, RSAFS, and DSPI) that we had chosen for this study. All datasets are free of sensitive or private data because they are sourced from public sources including FRED, BLS, the U.S. Census Bureau, and the U.S. Bureau of Economic Analysis. As a result, we found no issues with confidentiality or privacy.</p>
-
-# Assess and document data quality
-<p>During this milestone, we conducted an initial data quality assessment of the four selected datasets: UNRATE, CPIAUCSL, RSAFS, and DSPI. We reviewed each dataset for structure, missing values, duplicate rows, and time coverage.
-
-The datasets are generally well-structured and suitable for later analysis. Each file contains one date column (`observation_date`) and one numeric variable column. UNRATE has 939 rows, CPIAUCSL has 950 rows, RSAFS has 410 rows, and DSPI has 805 rows. This consistent structure will make later preprocessing and integration more manageable.
-
-The assessment also showed that data completeness is generally strong. RSAFS and DSPI contain no missing values, while UNRATE and CPIAUCSL each contain one missing value in the indicator column. No duplicate rows were found in any of the four datasets. In addition, all four datasets cover a sufficiently broad time range for the project, although their starting dates differ. UNRATE spans from 1948-01-01 to 2026-03-01, CPIAUCSL spans from 1947-01-01 to 2026-02-01, RSAFS spans from 1992-01-01 to 2026-02-01, and DSPI spans from 1959-01-01 to 2026-01-01.
-
-Based on this review, we concluded that the selected datasets are appropriate for the project, but further preprocessing will still be required. In particular, the datasets will need to be aligned by time period, and the small number of missing values in UNRATE and CPIAUCSL will need to be handled before merging and analysis.</p>
