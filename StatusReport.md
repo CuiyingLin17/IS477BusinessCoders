@@ -1,1 +1,8 @@
+# Task updates
 
+## Identify and describe specific storage and organization strategy
+<p> My strategy for organizing and storing our datasets and work was to have different folders for different types of files. Notebooks will contain all the coding work, the acquired notebooks include the code to retrieve the data. Future notebooks will be named according to their purpose and added to this folder. Other folders that are needed to organize and document our process include results, to explain our process and findings, references, data, to hold cleaned and merged data, and any future work done on other software. The reason for me to organize the files in this way is because having all the notebooks in one place for my members to look at will be helpful in the future of this project. In case we face errors in our code, back tracking will be easy if our files are stored and named based on their functions.
+For our future work the contents in the results folder should include all and only files that help explain and showcase the final product of our project. These most likely will be text files. References will include all of the websites and softwares that were used to make this project possible. Finally, we will need to make readme and contribution files to make this project more accessible to new users. </p>
+
+## Prepare Data
+<p> The data is acquired and checked for integrity by using SHA-256 to be prepared to download for future usage. Because our data is easily accessible online, there was not too much extra work needed to prepare the data. The hash will help the data be consistent in the future when the data set gets updated. Hash will help future users access the same data we are using currently to achieve the same results. </p>
