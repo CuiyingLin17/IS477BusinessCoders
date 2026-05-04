@@ -25,4 +25,4 @@ merged_dataset = merged_dataset[['observation_date', 'UNRATE', 'Inflation_Rate',
 merged_dataset.columns = ['observation_date', 'unemployment_rate', 'inflation_rate', 'disposable_personal_income', 'retail_sales']
 
 #save dataset as csv file
-merged_dataset.to_csv('data/merged_dataset.csv')
+merged_dataset.to_csv('data/merged_dataset.csv', index = False)
