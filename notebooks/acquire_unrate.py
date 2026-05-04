@@ -49,4 +49,4 @@ df = df[(df["observation_date"] >= '2015-01-01') & (df["observation_date"] <= '2
 print("Date range:", df[df.columns[0]].min(), "to", df[df.columns[0]].max())
 
 os.makedirs("data/filtered_10yrs", exist_ok=True)
-df.to_csv('data/filtered_10yrs/UNRATE_filtered.csv')
+df.to_csv('data/filtered_10yrs/UNRATE_filtered.csv', index = False)
