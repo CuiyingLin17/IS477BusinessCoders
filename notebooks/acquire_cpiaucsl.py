@@ -43,13 +43,13 @@ print(df.isna().sum())
 
 print("\nDuplicate rows:", df.duplicated().sum())
 
-df[df.columns[0]] = pd.to_datetime(df[df.columns[0]], errors="coerce")
-df = df[(df["observation_date"] >= '2015-01-01') & (df["observation_date"] <= '2026-01-01')]
-print("Date range:", df[df.columns[0]].min(), "to", df[df.columns[0]].max())
-
 df['OLD_CPI'] = df['CPIAUCSL'].shift(1)
 df['Inflation_Rate'] = (df['CPIAUCSL'] - df['OLD_CPI']) / df['OLD_CPI'] * 100
 df = df.drop(columns=['OLD_CPI'])
+
+df[df.columns[0]] = pd.to_datetime(df[df.columns[0]], errors="coerce")
+df = df[(df["observation_date"] >= '2015-01-01') & (df["observation_date"] <= '2026-01-01')]
+print("Date range:", df[df.columns[0]].min(), "to", df[df.columns[0]].max())
 
 df.head()
 
