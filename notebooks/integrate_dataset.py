@@ -20,7 +20,7 @@ assert len(merged_dataset) == len(retail_sales), 'merged_dataset must contain sa
 assert len(merged_dataset) == len(unemployment), 'merged_dataset must contain same rows as unemployment'
 
 #reorder columns
-merged_dataset = merged_dataset[['observation_date', 'UNRATE', 'inflation_rate', 'DSPI', 'RSAFS']]
+merged_dataset = merged_dataset[['observation_date', 'UNRATE', 'Inflation_Rate', 'DSPI', 'RSAFS']]
 #rename columns
 merged_dataset.columns = ['observation_date', 'unemployment_rate', 'inflation_rate', 'disposable_personal_income', 'retail_sales']
 
