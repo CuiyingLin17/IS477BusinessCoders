@@ -29,6 +29,17 @@ rule acquire_unrate:
     script:
         "scripts/acquire_unrate.py"
 
+rule integrate:
+    input:
+        rsa_filtered = "data/filtered_10yrs/RSAFS_filtered.csv",
+        unrate_filtered = "data/filtered_10yrs/UNRATE_filtered.csv",
+        cpi_filtered = "data/filtered_10yrs/CPIAUCSL_filtered.csv",
+        dspi_filtered = "data/filtered_10yrs/DSPI_filtered.csv"
+    output:
+        "data/merged_data/merged_dataset.csv"
+    script:
+        "notebooks/integrate_data.py"
+
 rule merge_clean:
     input:
         merged = "data/merged_data/merged_datset.csv"
