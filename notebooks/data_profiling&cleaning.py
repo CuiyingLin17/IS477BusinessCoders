@@ -7,6 +7,7 @@ print(df[df['unemployment_rate'].isna()])
 print(df[df['inflation_rate'].isna()])
 
 #data cleaning
+df['observation_date'] = pd.to_datetime(df['observation_date'], format = '%Y-%m-%d')
 df['disposable_personal_income'] = df['disposable_personal_income'] * 1000
 df['retail_sales'] = df['retail_sales'].astype(float)
 
