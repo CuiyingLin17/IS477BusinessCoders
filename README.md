@@ -1,6 +1,6 @@
 # Macroeconomic Factors and Retail Sales Relationship Analysis - IS477 Final Project
 
-## Contributers
+## Contributors
 <p>Cindy Chen (cchen280@illinois.edu) <br>
 Cuiying Lin (clin230@illinois.edu) <br>
 Yelin Zhong (zhongyelin601@gmail.com) </p>
