@@ -1,8 +1,8 @@
 # Macroeconomic Factors and Retail Sales Relationship Analysis - IS477 Final Project
 
 ## Contributers
-<p>Cindy Chen (cchen280@illinois.edu)
-Cuiying Lin (clin230@illinois.edu)
+<p>Cindy Chen (cchen280@illinois.edu) <br>
+Cuiying Lin (clin230@illinois.edu) <br>
 Yelin Zhong (zhongyelin601@gmail.com) </p>
 
 ## Summary
@@ -19,3 +19,60 @@ Yelin Zhong (zhongyelin601@gmail.com) </p>
 <p>The third data set, Advance Retail Sales, reports an advance estimate of retail sales from a subsample of firms from the Monthly Retail Trade Survey. An advance estimate is the first calculation of the retail sales in a month that are expected to happen. This estimate will then be replaced by actual performance of that month from the same Monthly Retail Trade Survey. Similarly, to the rest of the data, the numbers are also adjusted seasonally to ensure accurate representation of every month. The actual data also only has two columns, a date column and retails sales in millions column. Because the retail sales column is given in millions, and the disposable personal income index is given in billions, this is something we will need to address later in our analysis. In addition, we will need to again convert the date here as an object to a date time data type to be easier to use. </p>
 
 <p>The final data set, Unemployment Rate, measures the amount of unemployed people over the total amount of people in the labor force. To be considered unemployed, someone would need to be over the age of 16 actively seeking employment, who are not in any institutions, or are not on active duty in the Armed Forces. The labor force only includes people who can legally work. The final number is a percentage of people who are looking for work out of everyone that can and want to work. This percentage is also seasonally adjusted to ensure accurate representation of every month. Similar to the other data sets, this data set is also only 2 columns, one for the date and the other for the percentage of people unemployed on that respective date. The data starts on January 1st of 1948 and goes to March 1st of 2026. We will also need to convert the date column from an object to a date time date type to make it easier for us to use later on. The data has missing value for the observation date of 2025-10-01 due to the government shutdown.</p>
+
+## Data Cleaning
+<p>After performing data profiling and data quality assessments, we performed the following data cleaning operations to address specific issues in our dataset:  
+  
+- The `observation_date` column was converted to a datetime data type in the year-month-day format (e.g., 2015-01-01) using `pd.to_datetime()`. Although the dates were already consistently formatted as strings, this conversion ensures proper handling for time series-analysis and improves the validity of this column.  
+- The `disposable_personal_income` column was multiplied by 1,000 to convert values from billions to millions. This standardization addressed inconsistencies in units between `disposable_personal_income` (originally in billions) and `retail_sales` (originally in millions) to ensure comparability between variables.   
+- The `retail_sales` column was converted to a float data type from integers since sales are usually recorded as a float and to ensure consistency between variables.  
+- The `disposable_personal_income` and `retail_sales` columns were renamed to `disposable_personal_income_millions` and `retail_sales_millions` to clearly indicate their units of measurement. This improves clarity and enhances interpretability for future analysis.  
+</p>
+<p>Although there were one to two observations with missing values due to the government shutdown in October 2025, we did not perform data cleaning on this observation because we believe that this would not significantly affect our analysis. </p>
+
+## Challenges
+<p>While working on the project, the main challenges that we have encountered include the following:
+  
+- **Time frame selection**: Since we wanted to analyze and better understand future patterns of retail sales, we chose to focus on data from the last ten years, spanning from January 1, 2015 to January 1, 2026. While including more historical data could increase the dataset size and provide more observations for analysis, it could also introduce outdated economic conditions and distort the current trends. For example, the 2008 financial crisis may have little to no impact on present-day consumer behavior and retail sales. However, we also acknowledge that using a shorter time frame could, while ensuring relevance, miss long-term economic cycles or extended effects from major economic events. Therefore, we decided that a ten-year period provides a balanced approach, as it captures recent trends while still maintaining sufficient data variability for meaningful analysis.
+- **Data integration from multiple sources**: Although we used reliable data from the FRED and the datasets were generally consistent in structure and format, the datasets for disposable personal income and retails were not reported in the same units, where disposable personal income was reported in billions while retail sales was reported in millions. As mentioned in our Data Profiling section, this discrepancy required us to standardize the units before we could perform any meaningful analysis. We addressed this by converting disposable income into millions to ensure consistency between the two variables. Without this step, any comparison of our results would have been misleading. 
+- **Analysis interpretation**: While calculating the correlations between the three macroeconomic factors (inflation, unemployment rate, and disposable personal income) and retail sales was relatively straightforward from a computational perspective, we found that interpretation of the results was more challenging. In addition to analyzing the magnitude and direction of the correlations, we also had to evaluate whether the relationships made sense from an economic and business perspective. For example, the strong positive correlation between disposable personal income and retail sales aligned with economic theory of higher income generally leads to higher consumer spending. However, the weaker correlation between inflation and retail sales led us to reflect on how rising prices as a result of inflation may reduce consumers’ purchasing power if wages do not increase at the same rate, which could potentially lead to lower sales volumes even if nominal revenue appears higher. 
+</p>
+
+## Reproducing
+1. **Data Collection and Acquisition:** We acquired our initial four datasets from the Federal Reserve Bank of St. Louis using `acquire_cpiaucsl.py`, `acquire_dspi.py`, `acquire_rsafs.py`, and `acquire_unrate.py` from the `notebooks` folder. The raw datasets are stored in ‘data/raw’. To ensure integrity of our datasets, we hashed each dataset using SHA-256. The expected hash values of each raw dataset are as follows:
+   - CPIAUCSL SHA-256: 4494d9e15555069f0721bf5d18062bd7f88b70e3736ac5da2d5fcaf9ac64cd40
+   - DSPI SHA-256: ba1a48acd91c12a92b591cb80bb58413fcbaad89b382fc2830d67145c87540c9
+   - RSAFS SHA-256: 0d72fb748168b52997f318e01401cef1c9689a8aa3ce0d384f6b902d705a93c1
+   - UNRATE SHA-256: 084d2f0cfe41575534b96bd51b88c6e93ddc8d5f0eca7e470ecfd19f5428c94f
+2. **Storage and Organization:** We used different folders for files of different purposes, detailed as follows:
+   - `data`: datasets acquired and created for the project
+     - `raw`: raw datasets acquired from the FRED
+     - `filtered_10yrs`: raw datasets filtered to January 1, 2015 - January 1, 2026
+     - `merged_data`: integrated dataset and its cleaned version
+   - `notebooks`: all python scripts used for the project
+   - `reports`: project plan, status report, and final project report. 
+   - `results`: table and graphs generated for analysis
+   - `snakemake_files`: files for automating project workflow
+3. **Data Integration:** We integrated the four datasets using `pd.merge()`. It was merged on `observation_date` using outer merge because we wanted to keep all the observations. We also filtered our columns to only include the observation date, unemployment rate, inflation rate, disposable personal income, and retail sales. The integrated dataset is stored in `data/merged_data`
+4. **Data Quality and Cleaning:** For data profiling, we used `df.info()` to identify any missing values. For data cleaning, we performed the following operations:  
+   - converted `observation_date`’s data type to datetime, 
+   - standardized the unit of `disposable_personal_income` to millions, 
+   - converted `retail_sales`’s data type to float, and
+   - renamed `disposable_personal_income` to `disposable_personal_income_millions` and `retail_sales` to `retail_sales_millions`.
+   
+   The cleaned dataset is stored in `data/merged_data`
+
+5. **Data Analysis and Visualization:** We created a correlation matrix with all the variables and a line plot for retail sales over time. We also created two scatterplots of disposable income versus retail sales and unemployment rate versus retail sales.
+The table and graphs are stored in `results`
+6. **Workflow automation:** We used Snakemake to create an automated workflow. The Snakemake file and execution script is stored in `snakemake_files`.
+
+## References
+<p> The data created as part of our projects is publicly available and may be used with proper attribution, as the datasets that we used are governed by the same licensing terms.
+  
+- Kluyver, T., Ragan-Kelley, B., Pérez, F., Granger, B., Bussonnier, M., Frederic, J., Kelley, K., Hamrick, J., Grout, J., Corlay, S., Ivanov, P., Avila, D., Abdalla, S., & Willing, C. (2016). Jupyter Notebooks—A publishing format for reproducible computational workflows. In F. Loizides & B. Schmidt (Eds.), Positioning and Power in Academic Publishing: Players, Agents and Agendas (pp. 87–90).
+- Python Software Foundation. (2023). Python (Version 3.11) [Computer software]. https://www.python.org/
+- U.S. Bureau of Economic Analysis, Disposable Personal Income [DSPI], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DSPI, May 5, 2026.
+- U.S. Bureau of Labor Statistics, Consumer Price Index for All Urban Consumers: All Items in U.S. City Average [CPIAUCSL], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/CPIAUCSL, May 5, 2026.
+- U.S. Bureau of Labor Statistics, Unemployment Rate [UNRATE], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/UNRATE, May 5, 2026.
+- U.S. Census Bureau, Advance Retail Sales: Retail Trade and Food Services [RSAFS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/RSAFS, May 5, 2026.
+</p>
