@@ -1,4 +1,4 @@
-<p> CC0 1.0 Universal (Public Domain Dedication) </p>
+<p>CC0 1.0 Universal (Public Domain Dedication)</p>
 
 <p> Macroeconomic Factors and Retail Sales Relationship Analysis - IS477 Final Project by Cindy Chen, Cuiying Lin, and Yelin Zhong is marked with CC0 1.0 Universal. To view a copy of this license, visit creativecommons.org. We has waived all copyright 
 and related or neighboring rights to the software code in this repository. </p>
