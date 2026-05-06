@@ -27,7 +27,7 @@ def sha256(path):
     with open(path, "rb") as f:
         return hashlib.sha256(f.read()).hexdigest()
 
-print("UNRATE SHA-256:", sha256(CPIAUCSL_filename))
+print("CPIAUCSL SHA-256:", sha256(CPIAUCSL_filename))
 
 import pandas as pd
 df = pd.read_csv(CPIAUCSL_filename)
