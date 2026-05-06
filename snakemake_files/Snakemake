@@ -8,24 +8,28 @@ rule all:
 rule acquire_cpiaucsl:
     output:
         "data/raw/CPIAUCSL_raw.csv"
+        "data/filtered_10yrs/CPIAUCSL_filtered.csv"
     script:
         "scripts/acquire_cpiaucsl.py"
 
 rule acquire_dspi:
     output:
         "data/raw/DSPI_raw.csv"
+        "data/filtered_10yrs/DSPI_filtered.csv"
     script:
         "scripts/acquire_dspi.py"
 
 rule acquire_rsafs:
     output:
         "data/raw/RSAFS_raw.csv"
+        "data/filtered_10yrs/RSAFS_filtered.csv",
     script:
         "scripts/acquire_rsafs.py"
 
 rule acquire_unrate:
     output:
         "data/raw/UNRATE_raw.csv"
+        "data/filtered_10yrs/UNRATE_filtered.csv"
     script:
         "scripts/acquire_unrate.py"
 
