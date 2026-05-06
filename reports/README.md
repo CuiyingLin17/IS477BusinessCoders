@@ -2,7 +2,8 @@
 
 ## Contributers
 <p>Cindy Chen (cchen280@illinois.edu)
-Cuiying Lin (clin230@illinois.edu)</p>
+Cuiying Lin (clin230@illinois.edu)
+Yelin Zhong (zhongyelin601@gmail.com) </p>
 
 ## Summary
 <p>As Business + Data Science majors, this was a great opportunity for us to apply our data science skills and knowledge we learned from this class on to something else that is related to our major. By dividing the work between the three of us, we choose reliable sources, prepare and integrate the data to be ready for analysis. The purpose of this project is to analyze how each macroeconomic factor in the United States affects retail sales in the past 10 years. The factors that we choose include inflation, unemployment rate, and personal income. Inflation and personal income directly affects the purchasing power individuals have during a period of time, affecting retail sales. Unemployment rate may not affect everyone, but can determine the state of an economy. Higher unemployment can mean companies are laying off more employees either due to technological improvements or signs of recession. Lower unemployment can be signs of economic growth and usually will fall back to equilibrium. Breaking down changes in retail sales by different factors can help better understand and predict financial valuations on the retail. In order to get representative and accurate data, we found that the Federal Reserve Bank of St. Louis has easily accessible and data that was easy to use for our project. To ensure that our analysis stays relevant to current times, we kept the time frame within the last decade because it is more representative for when we need to predict future patterns of the economy, specifically in retail. If we take into account too many years of data, such as the market crash in 2008, the patterns would not be as relevant and timely. </p>
