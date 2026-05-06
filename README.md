@@ -108,12 +108,46 @@ The table and graphs are stored in `results`
 6. **Workflow automation:** We used Snakemake to create an automated workflow. The Snakemake file and execution script is stored in `snakemake_files`.
 
 ## References
-<p> The data created as part of our projects is publicly available and may be used with proper attribution, as the datasets that we used are governed by the same licensing terms.
-  
 - Kluyver, T., Ragan-Kelley, B., Pérez, F., Granger, B., Bussonnier, M., Frederic, J., Kelley, K., Hamrick, J., Grout, J., Corlay, S., Ivanov, P., Avila, D., Abdalla, S., & Willing, C. (2016). Jupyter Notebooks—A publishing format for reproducible computational workflows. In F. Loizides & B. Schmidt (Eds.), Positioning and Power in Academic Publishing: Players, Agents and Agendas (pp. 87–90).
 - Python Software Foundation. (2023). Python (Version 3.11) [Computer software]. https://www.python.org/
 - U.S. Bureau of Economic Analysis, Disposable Personal Income [DSPI], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DSPI, May 5, 2026.
 - U.S. Bureau of Labor Statistics, Consumer Price Index for All Urban Consumers: All Items in U.S. City Average [CPIAUCSL], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/CPIAUCSL, May 5, 2026.
 - U.S. Bureau of Labor Statistics, Unemployment Rate [UNRATE], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/UNRATE, May 5, 2026.
 - U.S. Census Bureau, Advance Retail Sales: Retail Trade and Food Services [RSAFS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/RSAFS, May 5, 2026.
-</p>
+
+## Descriptive Metadata
+```
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "US Retail Sales and Macroeconomics Factors Dataset",
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Cindy Chen"
+    },
+    {
+      "@type": "Person",
+      "name": "Cuiying Lin"
+    },
+    {
+      "@type": "Person",
+      "name": "Yelin Zhong"
+    }
+  ],
+  "license": "CC0 1.0 Universal",
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "https://github.com/CuiyingLin17/IS477BusinessCoders/blob/main/data/merged_data/merged_dataset_cleaned.csv",
+    "encodingFormat": "CSV"
+  },
+  "dateCreated": "2026-05-04",
+  "keywords": [
+    "economics",
+    "retail sales",
+    "inflation",
+    "unemployment",
+    "income"
+  ]
+}
+```
